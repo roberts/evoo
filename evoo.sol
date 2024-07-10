@@ -1,6 +1,9 @@
 /**
  *
  *
+   $EVOO on base chain
+   https://undeadchefs.com
+
    Contract features:
    1,000,000,000 tokens
    3% buy tax in ETH sent to community, marketing & developer
@@ -1145,7 +1148,7 @@ contract EVOO is ERC20, Ownable {
         address(0x000000000000000000000000000000000000dEaD);
 
     string public exchangeLink = "https://app.uniswap.or/swap";
-    string public websiteLink = "https://DrewRoberts.com";
+    string public websiteLink = "https://undeadchefs.com";
 
     address public communityWallet;
     address public marketingWallet;
