@@ -1,3 +1,10 @@
+/**
+ *
+ *
+    $EVOO on base dev wallet splitter
+    Contract splits dev fees between 2 wallet addresses
+ */
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
