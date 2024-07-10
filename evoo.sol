@@ -1228,7 +1228,7 @@ contract EVOO is ERC20, Ownable {
 
         communityWallet = address(0x4FA9d8c6c87Bbc547aD71574a70C9221e2D82Ed8); // Community Funds
         marketingWallet = address(0xd0B780D0a9A28CAF1677031506FeaEA98470a855); // Marketing Funds
-        developerWallet = address(0xA6d26E99660de4974B8994eCF75dcD4Cf34951B6); // Developer Funds
+        developerWallet = address(0x5CC18A5f235f9eA13976436aB0048f3Ef059AbBA); // Developer Funds
 
         _mint(address(this), totalSupply);
     }
