@@ -2,7 +2,7 @@
  *
  *
    Contract features:
-   100,000,000 tokens
+   1,000,000,000 tokens
    3% buy tax in ETH sent to community, marketing & developer
    16% launch sell tax in ETH sent to community, marketing, & developer
    Function to reduce taxes to 3/3
@@ -1205,12 +1205,12 @@ contract EVOO is ERC20, Ownable {
         );
         _approve(address(this), address(uniswapV2Router), type(uint256).max);
 
-        uint256 totalSupply = 100_000_000 ether;
+        uint256 totalSupply = 1_000_000_000 ether;
 
-        swapTokenAmount = totalSupply / 2000; // 0.05% of total supply (50,000 tokens)
+        swapTokenAmount = totalSupply / 2000; // 0.05% of total supply (500,000 tokens)
 
-        restrictMaxTransaction = totalSupply / 100; // 1% of total supply (1,000,000 tokens)
-        restrictMaxWallet = totalSupply / 20; // 5% of total supply (5,000,000 tokens)
+        restrictMaxTransaction = totalSupply / 100; // 1% of total supply (10,000,000 tokens)
+        restrictMaxWallet = totalSupply / 20; // 5% of total supply (50,000,000 tokens)
 
         communityTax = 1;
         marketingTax = 1;
