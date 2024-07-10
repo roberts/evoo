@@ -114,7 +114,7 @@ abstract contract Ownable is Context {
 
 contract DevSplitter is Ownable {
     address payable public wallet1 =
-        payable(0x85bb12C7EBd70a7995a64CE57c1F9919711A5205);
+        payable(0x5F7Df5abA72A17471aEA34a21Af6F2B6778c60aE);
     address payable public wallet2 =
         payable(0x85bb12C7EBd70a7995a64CE57c1F9919711A5205);
 
