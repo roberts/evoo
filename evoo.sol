@@ -2,7 +2,7 @@
  *
  *
    $EVOO on base chain
-   https://undeadchefs.com
+   https://UndeadChefs.com
    https://x.com/UndeadChefsNFT
    https://t.me/+P3HYOotorWgyNjhh
 
@@ -1150,7 +1150,7 @@ contract EVOO is ERC20, Ownable {
         address(0x000000000000000000000000000000000000dEaD);
 
     string public exchangeLink = "https://app.uniswap.or/swap";
-    string public websiteLink = "https://undeadchefs.com";
+    string public websiteLink = "https://UndeadChefs.com";
 
     address public communityWallet;
     address public marketingWallet;
