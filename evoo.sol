@@ -3,6 +3,8 @@
  *
    $EVOO on base chain
    https://undeadchefs.com
+   https://x.com/UndeadChefsNFT
+   https://t.me/+P3HYOotorWgyNjhh
 
    Contract features:
    1,000,000,000 tokens
