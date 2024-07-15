@@ -1214,7 +1214,7 @@ contract EVOO is ERC20, Ownable {
 
         swapTokenAmount = totalSupply / 2000; // 0.05% of total supply (500,000 tokens)
 
-        restrictMaxTransaction = totalSupply / 50; // 2% of total supply (20,000,000 tokens)
+        restrictMaxTransaction = totalSupply / 100; // 1% of total supply (10,000,000 tokens)
         restrictMaxWallet = totalSupply / 20; // 5% of total supply (50,000,000 tokens)
 
         communityTax = 1;
