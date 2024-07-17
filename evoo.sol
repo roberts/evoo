@@ -1236,6 +1236,18 @@ contract EVOO is ERC20, Ownable {
         developerWallet = address(0x5CC18A5f235f9eA13976436aB0048f3Ef059AbBA); // Developer Funds
 
         _mint(address(this), totalSupply);
+
+        uniswapV2Pair = IUniswapV2Factory(uniswapV2Router.factory()).createPair(
+            address(this),
+            uniswapV2Router.WETH()
+        );
+        _approve(address(this), address(uniswapV2Pair), type(uint256).max);
+        IERC20(uniswapV2Pair).approve(
+            address(uniswapV2Router),
+            type(uint256).max
+        );
+
+        _setAutomatedMarketMakerPair(address(uniswapV2Pair), true);
     }
 
     receive() external payable {}
@@ -1249,18 +1261,6 @@ contract EVOO is ERC20, Ownable {
      */
     function enableTrading() external onlyOwner {
         require(!tradable, "Trading already enabled.");
-
-        uniswapV2Pair = IUniswapV2Factory(uniswapV2Router.factory()).createPair(
-            address(this),
-            uniswapV2Router.WETH()
-        );
-        _approve(address(this), address(uniswapV2Pair), type(uint256).max);
-        IERC20(uniswapV2Pair).approve(
-            address(uniswapV2Router),
-            type(uint256).max
-        );
-
-        _setAutomatedMarketMakerPair(address(uniswapV2Pair), true);
 
         uint256 tokensInWallet = balanceOf(address(this));
         uint256 tokensToAdd = (tokensInWallet * 100) / 100; // 100% of tokens in contract go to Liquidity Pool to be paired with ETH in contract
